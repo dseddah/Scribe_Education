@@ -1,0 +1,97 @@
+[
+  {
+    "prompts": "v1",
+    "Unnamed: 1": "Tâche : Générer un ensemble de 10 questions à choix multiple (QCM) à partir du document que je te donne.\n\nFormat de sortie attendu : format texte\n\n-question_id : identifiant unique (ex. : Q1, Q2, …)\n\n-question_text : l’énoncé de la question (en français)\n\n-choices : un ensemble de 4 propositions (A, B, C, D)\n\n-correct_answer : la lettre correspondant à la bonne réponse\n\n-justification : une courte explication du raisonnement ou du calcul permettant de justifier la bonne réponse\n\n\nRépartition souhaitée des types de questions :\n\n-6 questions de lecture simple (valeurs directement lisibles dans le tableau)\n\n-4 questions de raisonnement complexe, avec des comparaisons, écarts ou calculs (moyennes, écarts maximaux, classements, etc.)\n\nContraintes générales :\n\n-Une seule bonne réponse par question\n\n-Toutes les questions et choix doivent être en français\n\n-Domaine : interprétation de données\n\nObjectif supplémentaire : Les questions complexes doivent encourager l’analyse et l’interprétation des données chiffrées du tableau plutôt qu’une simple lecture.",
+    "Unnamed: 2": "table"
+  },
+  {
+    "prompts": "V2",
+    "Unnamed: 1": "Tâche : Générer un ensemble de 10 questions à choix multiple (QCM) à partir du document que je te donne.\n\nFormat de sortie attendu : format texte\n\n-question_id : identifiant unique (ex. : Q1, Q2, …)\n\n-question_text : l’énoncé de la question (en français)\n\n-choices : un ensemble de 4 propositions (A, B, C, D)\n\n-correct_answer : la lettre correspondant à la bonne réponse\n\n-justification : une courte explication du raisonnement ou du calcul permettant de justifier la bonne réponse\n\n\nRépartition souhaitée des types de questions :\n\n-6 questions intéressantes.\n\n-4 questions de raisonnement complexe, avec des comparaisons, écarts ou calculs (moyennes, écarts maximaux, classements, etc.)\n\nContraintes générales :\n\n-Une seule bonne réponse par question\n\n-Toutes les questions et choix doivent être en français et rédigées.\n\n-Domaine : interprétation de données\n\nObjectif supplémentaire : Les questions complexes doivent encourager l’analyse et l’interprétation des données chiffrées du tableau plutôt qu’une simple lecture.",
+    "Unnamed: 2": "table"
+  },
+  {
+    "prompts": "V3",
+    "Unnamed: 1": "Tâche : Génère un ensemble de **10 questions à choix multiple (QCM)** à partir du document visuel que je te fournis (graphique, tableau ou schéma).\n\n###  **Format de sortie attendu** (format texte) :\n\n* **question\\_id** : identifiant unique (ex. : Q1, Q2, …)\n* **question\\_text** : énoncé de la question en français (formulé de manière naturelle, variée et engageante)\n* **choices** : un ensemble de 4 propositions clairement distinctes (A, B, C, D)\n* **correct\\_answer** : la lettre correspondant à la bonne réponse\n* **justification** : une explication courte et rigoureuse (chiffrée ou interprétative) justifiant la bonne réponse\n\n\n### **Répartition souhaitée des types de questions** :\n\n* **6 questions intéressantes**, variées dans leur formulation :\n  → Utilise une diversité de tournures interrogatives :\n\n  * *Parmi les propositions suivantes, laquelle...*\n  * *Que peut-on déduire du graphique...*\n  * *Pourquoi peut-on affirmer que...*\n  * *Comment expliquer que...*\n  * *À quoi correspond...*\n  * *Lequel des éléments suivants...*\n\n* **4 questions de raisonnement complexe**, fondées sur des comparaisons, des écarts, des classements ou des calculs simples (ex : moyennes, écarts maximaux, proportion, ordre croissant, etc.)\n\n\n### **Contraintes générales** :\n\n* Une seule bonne réponse par question\n* Toutes les questions et réponses doivent être **rédigées en français correct et clair**\n* Domaine : **interprétation de données visuelles et statistiques**\n* Les questions doivent être **équitables** (pas de pièges ou formulations ambiguës)\n* **Aucune question ne doit simplement répéter un chiffre brut sans réflexion.**\n\n\n### **Objectifs supplémentaires** :\n\n* Encourager l’analyse, la lecture fine du document, la mise en relation d’informations, l’esprit critique.\n* Inclure dans les 10 questions :\n  \n   **Au moins 2 formulations de type “non déterminable à partir du document”**, où la bonne réponse est que l’information ne peut pas être déduite avec certitude.",
+    "Unnamed: 2": "table"
+  },
+  {
+    "prompts": "V4",
+    "Unnamed: 1": "Tâche : Génère un ensemble de **10 questions à choix multiple (QCM)** à partir du document visuel que je te fournis (graphique, tableau ou schéma).\n\n###  **Format de sortie attendu** (format texte) :\n\n* **question\\_id** : identifiant unique (ex. : Q1, Q2, …)\n* **question\\_text** : énoncé de la question en français (formulé de manière naturelle, variée et engageante)\n* **choices** : un ensemble de 4 propositions clairement distinctes (A, B, C, D)\n* **correct\\_answer** : la lettre correspondant à la bonne réponse\n* **justification** : une explication courte et rigoureuse (chiffrée ou interprétative) justifiant la bonne réponse\n\n\n### **Répartition souhaitée des types de questions** :\n\n* **6 questions intéressantes**, variées dans leur formulation :\n  → Utilise une diversité de tournures interrogatives :\n\n  * *Parmi les propositions suivantes, laquelle...*\n  * *Que peut-on déduire du graphique...*\n  * *Pourquoi peut-on affirmer que...*\n  * *Comment expliquer que...*\n  * *À quoi correspond...*\n  * *Lequel des éléments suivants...*\n\n* **4 questions de raisonnement complexe**, fondées sur des comparaisons, des écarts, des classements ou des calculs simples (ex : moyennes, écarts maximaux, proportion, ordre croissant, etc.)\n\n\n### **Contraintes générales** :\n\n* une ou plusieurs bonnes réponses par question\n* Toutes les questions et réponses doivent être rédigées en français correct et clair\n* Aucune question ne doit simplement répéter un chiffre brut sans réflexion.\n\n### **Objectifs supplémentaires** :\n\n* Encourager l’analyse, la lecture fine du document, la mise en relation d’informations, l’esprit critique.\n * Au moins 2 questions dont la réponses est \"Il est impossible de répondre\"",
+    "Unnamed: 2": "table"
+  },
+  {
+    "prompts": "V5",
+    "Unnamed: 1": "Tâche : Génère un ensemble de **10 questions à choix multiple (QCM)** à partir du document visuel que je te fournis (graphique, tableau ou schéma).\n\n###  **Format de sortie attendu** (format texte) :\n\n* **question\\_id** : identifiant unique (ex. : Q1, Q2, …)\n* **question\\_text** : énoncé de la question en français (formulé de manière naturelle, variée et engageante)\n* **choices** : un ensemble de 4 propositions clairement distinctes (A, B, C, D)\n* **correct\\_answer** : la lettre correspondant à la bonne réponse\n* **justification** : une explication courte et rigoureuse (chiffrée ou interprétative) justifiant la bonne réponse\n\n\n### **Répartition souhaitée des types de questions** :\n\n* **6 questions intéressantes**, variées dans leur formulation :\n  → Utilise une diversité de tournures interrogatives :\n\n  * *Parmi les propositions suivantes, laquelle...*\n  * *Que peut-on déduire du graphique...*\n  * *Pourquoi peut-on affirmer que...*\n  * *Comment expliquer que...*\n  * *À quoi correspond...*\n  * *Lequel des éléments suivants...*\n\n* **4 questions de raisonnement complexe**, fondées sur des comparaisons, des écarts, des classements ou des calculs simples (ex : moyennes, écarts maximaux, proportion, ordre croissant, etc.)\n\n\n### **Contraintes générales** :\n\n* une ou plusieurs bonnes réponses par question\n* Toutes les questions et réponses doivent être rédigées en français correct et clair\n* Aucune question ne doit simplement répéter un chiffre brut sans réflexion.\n\n### **Objectifs supplémentaires** :\n\n* Encourager l’analyse, la lecture fine du document, la mise en relation d’informations, l’esprit critique.\n * Au moins 2 questions dont la réponses est \"Il est impossible de répondre\" ou \"l'information n'est pas présente\"",
+    "Unnamed: 2": "table"
+  },
+  {
+    "prompts": "ENA",
+    "Unnamed: 1": "Tâche : Génère un ensemble de **10 questions à choix multiple (QCM)** sur les sujets abordés dans la rédaction présentée.\n\n###  Format de sortie attendu (format texte) :\n* question\\_id : identifiant unique (ex. : Q1, Q2, …)\n* question\\_text : énoncé de la question en français (formulé de manière naturelle, variée et engageante)\n* choices : un ensemble de 4 propositions clairement distinctes (A, B, C, D)\n* correct\\_answer : la lettre correspondant à la bonne réponse\n* justification : une explication courte et rigoureuse justifiant la bonne réponse\n\n### Objectifs supplémentaires :\n* Encourager l’analyse, la lecture fine du document, la mise en relation d’informations, l’esprit critique.\n * Au moins 2 questions dont la réponses est \"Il est impossible de répondre\" ou \"l'information n'est pas présente\" ou \"je ne sais pas\"\n \n \n **** Rédaction ****\n ",
+    "Unnamed: 2": "text"
+  },
+  {
+    "prompts": "ENA",
+    "Unnamed: 1": "Tâche : Génère un ensemble de **10 questions à choix multiple (QCM)** sur les sujets abordés dans la rédaction présentée. Les questions portent sur la rédaction.\n\n###  Format de sortie attendu (format texte) :\n* question\\_id : identifiant unique (ex. : Q1, Q2, …)\n* question\\_text : énoncé de la question en français (formulé de manière naturelle, variée et engageante)\n* choices : un ensemble de 4 propositions clairement distinctes (A, B, C, D)\n* correct\\_answer : la lettre correspondant à la bonne réponse\n* justification : une explication courte et rigoureuse justifiant la bonne réponse\n\n### Objectifs supplémentaires :\n* Encourager l’analyse, la lecture fine du document, la mise en relation d’informations, l’esprit critique.\n* Au moins 1 question dont la réponse est \"l'information n'est pas présente\" ou \"je ne sais pas\"\n\n\n### Contraintes supplémentaire :\n\n* Varier la position de la réponse correcte entre A, B, C et D\n* Utilise une grande diversité de tournures interrogatives\n\n **** Rédaction ****",
+    "Unnamed: 2": "Génère 10 questions supplémentaires originales et dans un style soutenu en faisant varier les structures syntaxiques des questions. Les questions doivent porter sur les opinions, les idées et les conclusions de l'auteur dans sa rédaction."
+  },
+  {
+    "prompts": "",
+    "Unnamed: 1": "",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "",
+    "Unnamed: 1": "",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "",
+    "Unnamed: 1": "",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "Dataset tabletoeditable 1",
+    "Unnamed: 1": "Convertis ce tableau sous un format éditable au format Excel (.xlsx). \n\nContraintes:\n- Organiser les données sous forme de colonnes et de lignes.\n- Placer les valeurs numériques et les entêtes dans les bonnes cases de manière à conserver toutes les informations.\n- Générer un tableau dont les résultats présentés sont identiques au document d'origine.",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "",
+    "Unnamed: 1": "",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "",
+    "Unnamed: 1": "",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "Dataset tabletoeditable 2",
+    "Unnamed: 1": "Convertis ce tableau sous un format éditable au format Excel (.xlsx). \n\nContraintes:\n- Organiser les données sous forme de colonnes et de lignes.\n- Placer les valeurs numériques et les entêtes dans les bonnes cases de manière à conserver toutes les informations.\n- Générer un tableau dont les résultats présentés sont identiques au document d'origine.\n- Crée et génère directement le fichier Excel (.xlsx) avec ce tableau mis en forme.",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "",
+    "Unnamed: 1": "",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "",
+    "Unnamed: 1": "",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "",
+    "Unnamed: 1": "",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "Auteurs papier",
+    "Unnamed: 1": "Agis comme un expert en documentation scientifique. À partir de la liste d'auteurs et de la référence bibliographique fournie ci-dessous, génère [Nombre] questions de type QCM.\n\nConsignes de rédaction :\n\nVariété syntaxique : Utilise des phrases complexes (propositions subordonnées) et des pronoms interrogatifs variés (Lequel, Qui, De quelle manière...).\n\nTypes de questions : - Questions sur l'ordre des auteurs (premier, dernier, Xème position).\n\nQuestions sur les collaborations (ex: \"Avec qui X a-t-il rédigé...\").\n\nQuestions d'exclusion (ex: \"Lequel de ces noms ne fait pas partie de la liste...\").\n\nFormat des réponses : Propose systématiquement 4 choix (A, B, C, D).\n\nExactitude : La bonne réponse doit obligatoirement être un nom présent dans la liste fournie (sauf pour les questions d'exclusion).\n\nRéférence à utiliser : [Coller ici la référence et la liste des auteurs]\n\nFormat de sortie attendu :\n\nLa question\n\nLes options A, B, C, D\n\nLa réponse correcte (lettre uniquement)",
+    "Unnamed: 2": ""
+  },
+  {
+    "prompts": "Auteurs papier",
+    "Unnamed: 1": "```\nUSER\n\nContext:\nTu disposes de la liste d’auteurs et de la référence bibliographique complète d’un article scientifique donné ci-dessous.  \nCe contexte correspond à un unique papier scientifique, et toutes les questions doivent porter exclusivement sur **les auteurs de ce papier précis**, sans aucune ambiguïté possible.\n\nRéférence bibliographique :\nYanis Labrak, Adrien Bazoge, Richard Dufour, Mickael Rouvier, Emmanuel Morin, Béatrice Daille, and Pierre-Antoine Gourraud.  \nFrenchMedMCQA: A French Multiple-Choice Question Answering Dataset for Medical domain, April 2023.  \nURL http://arxiv.org/abs/2304.04280. arXiv:2304.04280 [cs].\n\nQuestion:\nGénère 6 questions à choix multiples (QCM) portant exclusivement sur les auteurs de l’article référencé ci-dessus.\n\nInstructions:\nAgis comme un expert en documentation scientifique et en conception d’évaluations académiques.\n\n1. Référence explicite au papier  \nChaque question doit mentionner clairement qu’elle concerne l’article référencé ci-dessus, en utilisant des formulations explicites telles que :\n- « Dans l’article intitulé “FrenchMedMCQA: A French Multiple-Choice Question Answering Dataset for Medical domain”… »\n- « Selon la publication d’avril 2023 référencée ci-dessus… »\n- « Dans ce papier scientifique référencé ci-dessus… »\n\n2. Variété syntaxique  \nUtilise des structures de phrases variées, incluant :\n- Des phrases simples et complexes avec propositions subordonnées\n- Des pronoms interrogatifs variés : Lequel, Qui, Laquelle, De quelle manière, Parmi les auteurs suivants, Quel est l’auteur qui…\n\n3. Variété des types de questions  \nInclure un mélange équilibré des types suivants :\n- Questions sur l’ordre des auteurs (premier, dernier, Xᵉ position, auteur précédent ou suivant un autre)\n- Questions sur les collaborations entre auteurs\n- Questions d’exclusion (« Lequel de ces noms ne fait pas partie des auteurs de l’article référencé ? »)\n- Questions d’identification indirecte (position relative entre deux auteurs, présence conditionnelle dans la liste)\n\n4. Contraintes sur les réponses  \n- Chaque question doit proposer 5 options : A, B, C, D, E\n- Une seule réponse correcte par question\n- La réponse correcte doit obligatoirement être un nom présent dans la liste des auteurs  \n  (exception : questions d’exclusion, où la bonne réponse doit être absente de la liste)\n- Les distracteurs doivent être plausibles et cohérents avec la question\n\n5. Format de sortie attendu  \nPour chaque question, respecte strictement le format suivant :\n\nQuestion :\n[Texte complet de la question]\n\nA. [Option A]  \nB. [Option B]  \nC. [Option C]  \nD. [Option D]\nE. [Option D]\n\nRéponse correcte : [Lettre uniquement]\n\nASSISTANT\n\nAnswer:\n[MODEL COMPLETION]\n```\n",
+    "Unnamed: 2": ""
+  }
+]
